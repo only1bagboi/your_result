@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+.blue_div {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(241, 81%, 54%),
+    hsl(252, 100%, 67%)
+  );
+  height: 510px;
+  width: 450px;
+  border-radius: 35px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 500px) {
+  .blue_div {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: aqua;
+}
+
+/* media Query from screen 500px to 0px */
+@media (max-width: 500px) {
+  .body {
+    flex-direction: column;
+    border-radius: 0;
+  }
+}
+
+.result {
+  height: 100px;
+  padding-top: 40px;
+}
+.result p {
+  font-size: 24px;
+  color: var(--Light-lavender);
+  text-align: center;
+}
+.circle {
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 120px;
+}
+
+.circle p {
+  text-align: center;
+  color: var(--White);
+  font-size: 75px;
+  padding-top: 40px;
+}
+
+.circle span {
+  color: var(--Pale-blue);
+  padding-left: 80px;
+}
+
+.bottom {
+  margin: 40px 0;
+
+  max-width: 300px;
+  margin-left: 75px;
+}
+
+.bottom h1 {
+  color: var(--White);
+  font-size: 27px;
+  font-weight: 1000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.bottom p {
+  color: var(--Light-lavender);
+  font-size: 18px;
+  text-align: center;
+  padding: 0 37px;
+  line-height: 25px;
+}
+/* ============================================= */
+
+.white_div {
+  background-color: var(--White);
+  /* border: 1px solid red; */
+  height: 510px;
+  width: 500px;
+  border-radius: 35px;
+  padding-left: 100px;
+  position: absolute;
+  left: 480px;
+  padding-top: 30px;
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.summary p {
+  font-size: 22px;
+  color: gray;
+  margin-bottom: 25px;
+}
+
+.pink {
+  background-color: rgb(249, 231, 234);
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  align-items: center;
+  margin-top: 20px;
+
+  border-radius: 10px;
+}
+.first {
+  display: flex;
+  gap: 10px;
+}
+.red p {
+  color: var(--Light-red);
+  font-size: 18px;
+}
+
+.next p {
+  font-size: 18px;
+}
+.next span {
+  font-size: 18px;
+  color: grey;
+}
+
+.yellow {
+  background-color: rgb(255, 254, 200);
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  align-items: center;
+  margin-top: 25px;
+
+  border-radius: 10px;
+}
+.second {
+  display: flex;
+  gap: 10px;
+}
+.orange p {
+  color: var(--Orangey-yellow);
+  font-size: 18px;
+}
+
+.green {
+  background-color: rgb(204, 255, 200);
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  align-items: center;
+  margin-top: 25px;
+
+  border-radius: 10px;
+}
+.third {
+  display: flex;
+  gap: 10px;
+}
+.lightgreen p {
+  color: var(--Green-teal);
+  font-size: 18px;
+}
+
+.blue {
+  background-color: rgb(200, 215, 255);
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  align-items: center;
+  margin-top: 25px;
+
+  border-radius: 10px;
+}
+.fourth {
+  display: flex;
+  gap: 10px;
+}
+.lightblue p {
+  color: var(--Light-royal-blue);
+  font-size: 18px;
+}
+
+.link a {
+  text-decoration: none;
+  padding: 10px 40px;
+  background-color: var(--Dark-gray-blue);
+  color: var(--White);
+  border-radius: 30px;
+  padding: 15px 145px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.link a:hover {
+  background-color: var(--Violet-blue);
+  font-size: 18px;
+  font-weight: 900;
+  padding: 13px 140px;
+}
+
+.link {
+  margin-top: 50px;
+}
+
+.section {
+  width: 1240px;
+  height: 550px;
+  /* background-color: pink; */
+  padding: 25px 87px;
+}
